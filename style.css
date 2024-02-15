@@ -1,0 +1,170 @@
+body {
+    background-color: #fcd232;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    background-color: #fcd232;
+}
+
+.option {
+    color: #302f38;
+    text-decoration: none;
+}
+
+.option:hover{
+    color: #302f38;
+}
+
+.list {
+    line-height: 45px;
+}
+
+.nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 23px;
+    width: 23px;
+  }
+  
+  .nav-toggle .bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    transition: all 100ms ease-in-out;
+    border-radius: 50px;
+  }
+  
+
+  .nav-toggle:hover {
+    cursor: pointer;
+  }
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('./img/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.x:nth-of-type(1) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 28px;
+  }
+  
+  .x:nth-of-type(2) {
+    transition: all 100ms ease-in-out;
+    transform-origin: center;
+    width: 0;
+  }
+  
+  .x:nth-of-type(3) {
+    transition: all 100ms ease-in-out;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    width: 28px;
+  }
+  
+  input::placeholder{
+    font-style: italic;
+}
+
+  input[type="radio"] {
+  appearance: none;
+}
+
+.item-nav {
+  height: 150px;
+}
+
+.bg-gray {
+  background-color: #302f38;
+}
+
+#card-span {
+  background-color: #fcd232;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+
+.hiddenStyle {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.load {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+#loadMore {
+  cursor: pointer;
+}
+
+.card{
+  box-shadow: 0px 5px 24px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 5px 24px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 24px -4px rgba(0,0,0,0.75);
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-body button {
+  float: right;
+}
+
+.btn {
+  background-color: #ff1300;
+  font-weight: bold;
+}
+
+.send {
+  margin-top: 32px;
+}
+
+@media (max-width: 426px) {
+
+    .navbar-bg {
+      background-color: #302f38;
+    }
+
+    .navbar-open {
+      height: 100vh;
+      display: block;
+    }
+
+    .option{
+        color: #fff;
+    }
+}

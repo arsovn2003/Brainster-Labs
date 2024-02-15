@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Вработи наш студент</title>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <!-- BOOTSTRAP CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- LOCAL MAIN CSS-->
+        <link rel="stylesheet" href="./main.css">
+        <!-- BOOTSTRAP ICONS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        
+        <!-- Navbar  -->
+
+
+        <nav class="navbar navbar-expand-lg px-lg-5 py-4">
+            <div class="container-fluid px-md-5"> 
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/Logo.png" class="logo  d-md-block "/>
+                </a>
+                <button class="navbar-toggler ms-auto" id="menu-toggle"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <div class="nav-toggle">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto list">
+                        <li class="nav-item">
+                            <a class="option fw-bold" href="https://brainster.co/marketing/">
+                                Академија за маркетинг
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-4 m-0">
+                            <a class="option fw-bold" href="https://brainster.co/front-end/">
+                                Академија за програмирање
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-4 m-0">
+                            <a class="option fw-bold" href="https://brainster.co/data-science/">
+                                Академија за data science
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-4 m-0">
+                            <a class="option fw-bold" href="https://brainster.co/ux-ui-design/">
+                                Академија за дизајн
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navbar-button">
+                        <button class="btn btn-danger mt-3 mt-md-0"><a href="student.html" class="text-white text-decoration-none fw-bold">Вработи наш студент</a></button>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+
+        <!-- Form  -->
+
+        <form id="basic-form">
+            <div class="container-fluid mb-5">
+                <div class="row">
+                    <div class="container d-flex justify-content-center align-items-center mt-5">
+                        <div class="row">
+                            <div class="col-12 text-center mb-5">
+                                <h1>Вработи студенти</h1>
+                            </div>
+                            <div class="form mt-5">
+                                <div class="card1 p-3 py-5">
+                                <div class="row flex-column flex-md-row mb-0 mb-md-3">
+                                    <div class="col-12 col-lg-6">
+                                        <!-- <label for="fullname" class="form-label fw-bold">Име и презиме</label>
+                                        <input type="text" class="form-control ps-3 pt-3 pb-3 w-100 pe-5" id="fullname" name="fullname" aria-describedby="emailHelp" placeholder="Вашето име и презиме"> -->
+                                        <div class="form-group">
+                                            <label for="user" class="form-label fw-bold">
+                                                Име и презиме
+                                            </label>
+                                            <input type="text"
+                                                   name="username"
+                                                   id="usernames"
+                                                   class="form-control  ps-3 pt-3 pb-3 w-100 pe-5"
+                                                   placeholder="Вашето име и презиме" >
+                                                   
+                                            <p id="usercheck"
+                                                style="color: red;">
+                                                First name and Last name is missing
+                                            </p>
+                                        </div>
+                                </div>
+                                <div class="col-12 col-lg-6 mt-md-0 mt-4">
+                                    <label for="exampleInputEmail1" class="form-label fw-bold">Име на компанија</label>
+                                    <input type="email" class="form-control ps-3 pt-3 pb-3 w-100 pe-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Име на вашата компанија">
+                                </div>
+                                </div>
+                                <div class="row flex-column flex-md-row">
+                                    <div class="col-12 col-lg-6 mt-md-0 mt-4">
+                                        <!-- <label for="exampleInputEmail1" class="form-label fw-bold">Контакт имејл</label>
+                                    <input type="email" class="form-control ps-3 pt-3 pb-3 w-100 pe-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Контакт имејл на вашата компанија"> -->
+                                    <div class="form-group">
+                                        <label for="user" class="form-label fw-bold">
+                                            Контакт имејл
+                                        </label>
+                                        <input type="email"
+                                               name="email"
+                                               id="email" required
+                                               class="form-control ps-3 pt-3 pb-3 w-100 pe-5"
+                                               placeholder="Контакт имејл на вашата компанија" >
+                                        <small id="emailvalid"
+                                               class="form-text text-muted invalid-feedback">
+                                            Your email must be a valid 
+                                        </small>
+                                    </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-md-0 mt-4">
+                                        <label for="exampleInputEmail1" class="form-label fw-bold">Контакт телефон</label>
+                                        <input type="number" class="form-control ps-3 pt-3 pb-3 w-100 pe-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Контакт телефон на вашата компанија">
+                                    </div>
+                                </div>
+                                <div class="row flex-column flex-md-row  ">
+                                    <div class="col-12 col-lg-6 mt-3 ">
+                                        <label for="disabledSelect" class="form-label fw-bold">Тип на студенти</label>
+                                        <select id="disabledSelect" class="form-select fw-bold ps-3 pt-3 pb-3 w-100 pe-5 mb-md-0 mb-5">
+                                            <option>Студенти од маркетинг</option>
+                                            <option>Студенти од програмирање</option>
+                                            <option>Студенти од data science</option>
+                                            <option>Студенти од дизајн</option>
+                                        </select> 
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-md-0 mt-5">
+                                        <button class="btn btn-danger ps-3 pt-3 pb-3 w-100 pe-5 send text-uppercase  mt-5" id="submit">Испрати</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+
+        <!-- Footer  -->
+
+        <div class="container-fluid bg-dark text-white text-center py-3 mt-5 position-fixed bottom-0">
+            <div class="row">
+                <div class="col-12">
+                    <p class="fw-bold">Изработено со ❤️ од студентите на Brainster</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQUERY  -->
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+        <!-- POPPER JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        
+        <!-- BOOTSTRAP JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
